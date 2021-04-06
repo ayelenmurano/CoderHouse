@@ -1,0 +1,28 @@
+
+    <div class="col-sm-8">
+        <div class="jumbotron">
+            <h1>Tabla de productos</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Precio</td>
+                        <td>Thumbnail</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% productos.forEach(function(producto){ %>
+                        <tr>
+                            <td> <%= producto.titulo %> </td>
+                            <td> <%= producto.precio %> </td>
+                            <td> <img src=<%=producto.thumbnail %> width="50" height="50"> </td>
+                        </tr>
+                    <% }) %>
+                    <tr>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+

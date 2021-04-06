@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>API de productos</title>
+
+        <!-- CSS (load bootstrap from a CDN) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            body { padding-top:50px; }
+        </style>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/index.js"></script>
+    </head>
+
+    <body class="container">
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="/">API de productos</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/about"></a>
+                  </li>
+                </ul>
+            </nav>
+            
+            
+        </header>
+
+        <main>
+            <div class="row">
+
+                <%- include('../partials/productos'); %>
+            
+                <div class="col-sm-4">
+                    <div class="well">
+                        <%- include('../partials/formulario'); %>
+                    </div>
+                </div>
+            </div>
+
+            
+        </main>
+
+        <footer>
+            <p class="text-center text-muted">© Copyright 2020 The Awesome People</p>
+        </footer>
+
+    </body>
+</html>
